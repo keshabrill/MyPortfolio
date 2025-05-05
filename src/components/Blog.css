@@ -1,0 +1,238 @@
+.field-trip-section {
+    margin-bottom: 50px;
+  }
+  
+  .field-trip-section h3 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+  }
+  
+  .field-trip-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  .tab-btn {
+    padding: 10px 18px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .tab-btn:hover {
+    background-color: var(--primary-light);
+    color: white;
+    border-color: var(--primary-light);
+  }
+  
+  .tab-btn.active {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .field-trip-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .field-trip-info h4 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .field-trip-info p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .image-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .image-counter {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  .image-nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .nav-btn:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+  
+  .field-trip-image {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 300px;
+  }
+  
+  .field-trip-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    height: 60px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+  }
+  
+  .thumbnail.active {
+    border-color: var(--primary);
+    transform: scale(1.05);
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .post-modal-content {
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .post-modal-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--card-bg);
+    z-index: 1;
+  }
+  
+  .post-modal-header h3 {
+    margin: 0;
+    text-align: left;
+    color: var(--primary);
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .close-btn:hover {
+    color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .post-modal-body {
+    padding: 20px;
+  }
+  
+  .post-modal-image {
+    height: 300px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .post-modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-modal-date {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+  }
+  
+  .post-modal-text {
+    line-height: 1.8;
+  }
+  
+  @media (min-width: 768px) {
+    .field-trip-content {
+      flex-direction: row;
+    }
+  
+    .field-trip-info {
+      flex: 1;
+    }
+  
+    .field-trip-image {
+      flex: 1;
+    }
+  }
+  

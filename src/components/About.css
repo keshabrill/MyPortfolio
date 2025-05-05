@@ -1,0 +1,72 @@
+.about {
+  background-color: var(--primary-dark);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-info h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .about-details {
+    margin-bottom: 30px;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+  
+  .about-details p {
+    margin-bottom: 8px;
+  }
+  
+  .about-bio h4 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  
+  .about-bio p {
+    line-height: 1.8;
+  }
+  
+  .about-interests h3 {
+    color: var(--primary);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+  }
+  
+  .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .interest-card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .interest-card i {
+    color: var(--primary);
+    font-size: 1.5rem;
+    width: 30px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  

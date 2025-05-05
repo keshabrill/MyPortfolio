@@ -1,0 +1,92 @@
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .skill-item {
+    margin-bottom: 20px;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .skill-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+  }
+  
+  .skill-name i {
+    color: var(--primary);
+  }
+  
+  .skill-percentage {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .skill-progress {
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .skill-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 4px;
+    transition: width 1.5s ease-in-out;
+  }
+  
+  .technical-proficiency h3 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .proficiency-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .proficiency-card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .proficiency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .proficiency-card h4 {
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+  
+  @media (min-width: 768px) {
+    .skills-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .proficiency-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

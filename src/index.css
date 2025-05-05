@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+:root {
+  --primary-rgb: 63, 33, 130;
+  --success-rgb: 56, 176, 0;
+  --error-rgb: 208, 0, 0;
+}
+
+body.dark-mode {
+  --background: #121212;
+  --text: #f8f9fa;
+  --text-light: #adb5bd;
+  --text-dark: #e9ecef;
+  --card-bg: #1e1e1e;
+  --border: #333333;
+}
