@@ -80,11 +80,9 @@ const Achievements = () => {
           </div>
 
           <div className="certificate-buttons">
-            <button className="btn btn-outline" onClick={() => toggleCertificates("linkedin")}>
-              View LinkedIn Certificates
-            </button>
+            
             <button className="btn btn-outline" onClick={() => toggleCertificates("simplilearn")}>
-              View Simplilearn Certificates
+              View Certificates
             </button>
           </div>
 
@@ -128,15 +126,74 @@ const Achievements = () => {
                       ) : (
                         <>
                           <tr>
-                            <td>UI/UX Design Essentials</td>
-                            <td>February 5, 2023</td>
-                            <td>12 hours</td>
+                            <td data-image="/tableu.png"> Tableau Data Visualiztion Basics Tutorial</td>
+                            <td>May 04, 2025</td>
+                            <td> 4 hours</td>
                           </tr>
                           <tr>
-                            <td>Responsive Web Design</td>
-                            <td>April 18, 2023</td>
-                            <td>10 hours</td>
+                            <td data-image="/sigma.png">Introduction to Six Sigma</td>
+                            <td>April 20, 2025</td>
+                            <td>7 hours</td>
                           </tr>
+                          <tr>
+                            <td data-image="/responsive.png">Responsive Web Design</td>
+                            <td>May 02, 2025</td>
+                            <td>300 hours</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/pmpbasics.png">PMP Basics</td>
+                            <td>April 20, 2025</td>
+                            <td>6 hours</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/pm101.png">Project Management 101</td>
+                            <td>April 17, 2025</td>
+                            <td>1 hour</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/networking.png">Introduction to Computer Networking</td>
+                            <td>April 25, 2025</td>
+                            <td>3 hours</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/javaalgo.png">JavaScript Algorithms and Data Structures</td>
+                            <td>May 05, 2025</td>
+                            <td>300 hours</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/introdatasciwithr.png">Introduction to Data Science with R Programming</td>
+                            <td>April 25, 2025</td>
+                            <td>6 hours</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/introdatasci.png">Introduction to Data Science</td>
+                            <td>April 22, 2025</td>
+                            <td>7 hours</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/introcybercrime.png">Introduction to Cybercrime</td>
+                            <td>May 01, 2025</td>
+                            <td>2 hours</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/excelvba.png">Excel MArcos & VBA for Beginners</td>
+                            <td>April 20, 2025</td>
+                            <td>1 hour</td>
+                          </tr>
+                          <tr>
+                            <td data-image="arti.png">Artificial Intelligence Foundations: Machine Learning</td>
+                            <td>April 22, 2025</td>
+                            <td>1 hour 50 minutes</td>
+                          </tr>
+                          <tr>
+                            <td data-image="/gettinpy.png">Getting Python Interview Ready</td>
+                            <td>April 22, 2025</td>
+                            <td>1 hour 50 minutes</td>
+                          </tr>
+
+
+
+
                         </>
                       )}
                     </tbody>
